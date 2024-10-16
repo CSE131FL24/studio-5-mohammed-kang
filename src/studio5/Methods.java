@@ -34,29 +34,24 @@ public class Methods {
 	public static void drawBullsEye(double x, double y, double radius) {
 		StdDraw.setPenColor(StdDraw.BLACK);
 		StdDraw.filledCircle(x1, y1, radius);
-		StdDraw.setPenColor(StdDraw.BLUE);
-		StdDraw.filledCircle(x2, y2, radius/1.25);
-		StdDraw.setPenColor(StdDraw.RED);
-		StdDraw.filledCircle(x3, y3, radius/1.5);
-		StdDraw.setPenColor(StdDraw.YELLOW);
-		StdDraw.filledCircle(x4, y4, radius/2);
-
-
 
 		// TODO: Draw the remaining rings of the bull's eye
 		// Blue ring with 3.0/4.0 the radius
 		// suggested rgb values: 0, 109, 219
-
+		StdDraw.setPenColor(StdDraw.BLUE);
+		StdDraw.filledCircle(x2, y2, radius/1.25);
 		
 
 		// Red ring with 1.0/2.0 the radius
 		// suggested rgb values: 146, 0, 0
-
+		StdDraw.setPenColor(StdDraw.RED);
+		StdDraw.filledCircle(x3, y3, radius/1.5);
 		
 
 		// Yellow ring with 1.0/4.0 the radius
 		// suggested rgb values: 255, 255, 109
-
+		StdDraw.setPenColor(StdDraw.YELLOW);
+		StdDraw.filledCircle(x4, y4, radius/2);
 		
 	}
 
