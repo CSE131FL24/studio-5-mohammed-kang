@@ -16,10 +16,14 @@ public class Methods {
 	public static double distanceBetween(double x1, double y1, double x2, double y2) {
 		double distance = 0;
 		// FIXME: Hint use Math methods (e.g. Math.sqrt) to compute the distance
+	
+		distance = (x2-x1)*(x2-x1) + (y2-y1)*(y2-y1);
+		Math.sqrt(distance);
 		
 		return distance;
 	}
 
+	
 	/**
 	 * Draw a bull's eye at the given location with the given radius.
 	 *
@@ -29,7 +33,15 @@ public class Methods {
 	 */
 	public static void drawBullsEye(double x, double y, double radius) {
 		StdDraw.setPenColor(StdDraw.BLACK);
-		StdDraw.filledCircle(x, y, radius);
+		StdDraw.filledCircle(x1, y1, radius);
+		StdDraw.setPenColor(StdDraw.BLUE);
+		StdDraw.filledCircle(x2, y2, radius/1.25);
+		StdDraw.setPenColor(StdDraw.RED);
+		StdDraw.filledCircle(x3, y3, radius/1.5);
+		StdDraw.setPenColor(StdDraw.YELLOW);
+		StdDraw.filledCircle(x4, y4, radius/2);
+
+
 
 		// TODO: Draw the remaining rings of the bull's eye
 		// Blue ring with 3.0/4.0 the radius
